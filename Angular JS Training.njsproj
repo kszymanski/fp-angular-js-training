@@ -30,8 +30,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="public\scripts\displayElement.js" />
-    <Compile Include="public\scripts\doubleClick.js" />
     <Compile Include="public\scripts\libs\angular-animate.js" />
     <Compile Include="public\scripts\libs\angular-animate.min.js" />
     <Compile Include="public\scripts\libs\angular-cookies.js" />
@@ -51,15 +49,6 @@
     <Compile Include="public\scripts\libs\angular.js" />
     <Compile Include="public\scripts\libs\angular.min.js" />
     <Compile Include="public\scripts\libs\jquery-2.0.3.js" />
-    <Compile Include="public\scripts\quantityIndicator.js" />
-    <Compile Include="public\scripts\app.js" />
-    <Compile Include="public\scripts\orderController.js" />
-    <Compile Include="public\scripts\productsController.js" />
-    <Compile Include="public\scripts\productService.js" />
-    <Compile Include="public\scripts\shoppingCart.js" />
-    <Compile Include="public\scripts\shoppingCartController.js" />
-    <Compile Include="public\scripts\tab.js" />
-    <Compile Include="public\scripts\tabs.js" />
     <Compile Include="routes\products.js" />
     <Content Include="package.json" />
     <Content Include="public\images\1.gif" />
@@ -75,11 +64,6 @@
     <Content Include="public\scripts\libs\angular-touch.min.js.map" />
     <Content Include="public\scripts\libs\angular.min.js.map" />
     <Content Include="public\stylesheets\style.css" />
-    <Content Include="public\views\order.html" />
-    <Content Include="public\views\productDetails.html" />
-    <Content Include="public\views\products.html" />
-    <Content Include="public\views\shoppingCart.html" />
-    <Content Include="public\views\_cart.html" />
     <Content Include="README.md" />
     <Content Include="public\index.html" />
   </ItemGroup>
