@@ -8,7 +8,7 @@
 		$scope.showDetails = function(id) {
 			$scope.visibleDetails[id] = true;
 		};
-		
+
 		$scope.hideDetails = function(id) {
 			$scope.visibleDetails[id] = false;
 		};
@@ -16,10 +16,6 @@
 		$scope.addToCart = function(product) {
 			shoppingCart.addProduct(product);
 			$location.path("cart");
-		};
-
-		$scope.onRowExpanded = function() {
-			console.log("product details expanded.");
 		};
 	});
 });

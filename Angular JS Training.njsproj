@@ -30,14 +30,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="config\unit.conf.js" />
-    <Compile Include="gruntfile.js" />
-    <Compile Include="public\scripts\cartItemCountIndicator.js" />
-    <Compile Include="public\scripts\doubleClick.js" />
-    <Compile Include="public\scripts\gallery\gallery.js" />
-    <Compile Include="public\scripts\gallery\image.js" />
-    <Compile Include="public\scripts\gallery\imageLink.js" />
-    <Compile Include="public\scripts\gallery\module.js" />
     <Compile Include="public\scripts\libs\angular-mocks.js" />
     <Compile Include="public\scripts\libs\angular-resource.js" />
     <Compile Include="public\scripts\libs\angular-resource.min.js" />
@@ -49,18 +41,12 @@
     <Compile Include="public\scripts\libs\jquery.js" />
     <Compile Include="public\scripts\quantityIndicator.js" />
     <Compile Include="public\scripts\app.js" />
-    <Compile Include="public\scripts\orderController.js" />
     <Compile Include="public\scripts\productsController.js" />
     <Compile Include="public\scripts\productService.js" />
     <Compile Include="public\scripts\shoppingCart.js" />
     <Compile Include="public\scripts\shoppingCartController.js" />
-    <Compile Include="public\scripts\tab.js" />
-    <Compile Include="public\scripts\tabs.js" />
-    <Compile Include="public\scripts\orderConfirmationController.js" />
     <Compile Include="routes\orders.js" />
     <Compile Include="routes\products.js" />
-    <Compile Include="test\unit\quantityIndicatorTests.js" />
-    <Compile Include="test\unit\shoppingCartControllerTests.js" />
     <Content Include="package.json" />
     <Content Include="public\images\air-1.png" />
     <Content Include="public\images\air-2.jpg" />
@@ -74,6 +60,7 @@
     <Content Include="public\scripts\libs\angular.min.js.map" />
     <Content Include="public\stylesheets\gallery.css" />
     <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\views\notFound.html" />
     <Content Include="public\views\order.html" />
     <Content Include="public\views\orderConfirmation.html" />
     <Content Include="public\views\productDetails.html" />
@@ -84,9 +71,6 @@
     <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="config\" />
-    <Folder Include="public\scripts\gallery\" />
-    <Folder Include="test\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\scripts\" />
@@ -94,7 +78,6 @@
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="public\views\" />
-    <Folder Include="test\unit\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>

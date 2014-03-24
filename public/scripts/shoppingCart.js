@@ -1,5 +1,5 @@
-﻿app.service("shoppingCart", function($rootScope) {
-	var cart = angular.fromJson(localStorage.getItem("cart") || "{}");
+﻿app.service("shoppingCart", function() {
+	var cart = {};
 
 	this.addProduct = function(product) {
 		if (!cart[product.id]) {
@@ -8,14 +8,10 @@
 			cart[product.id].quantity += 1;
 		}
 		
-		localStorage.setItem("cart", angular.toJson(cart));
-		$rootScope.$broadcast("cartContentsChanged");
 	};
 
 	this.removeAll = function() {
 		cart = {};
-		localStorage.setItem("cart", angular.toJson(cart));
-		$rootScope.$broadcast("cartContentsChanged");
 	};
 
 	this.getProducts = function() {

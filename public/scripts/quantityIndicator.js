@@ -15,9 +15,8 @@
 
 				ratio = ratio * 100 + "%";
 
-
 				fill.css({ width: ratio });
 			});
 		}
-    };
+	};
 });
