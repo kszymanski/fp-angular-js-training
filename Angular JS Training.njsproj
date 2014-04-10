@@ -30,6 +30,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="config\unit.conf.js" />
+    <Compile Include="gruntfile.js" />
     <Compile Include="public\scripts\libs\angular-mocks.js" />
     <Compile Include="public\scripts\libs\angular-resource.js" />
     <Compile Include="public\scripts\libs\angular-resource.min.js" />
@@ -71,6 +73,7 @@
     <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="config\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\scripts\" />
