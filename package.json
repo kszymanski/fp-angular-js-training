@@ -1,13 +1,21 @@
 {
 	"name": "AngularJS-Training",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Angular JS Training",
 	"main": "app.js",
+	"scripts": {
+		"start": "node app"
+	},
 	"author": {
-		"name": "Micha≥ Dudak",
+		"name": "Micha≈Ç Dudak",
 		"email": "mdudak@future-processing.com"
 	},
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/doodack/fp-angular-js-training.git"
+	},
+	"private": true,
 	"dependencies": {
-		"express": "~3.4.4"
+		"express": "~3.6.0"
 	}
 }
