@@ -1,2 +1,5 @@
 /node_modules
 /*.suo
+*.cache
+/obj
+.ntvs_analysis.dat
