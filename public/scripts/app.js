@@ -1,4 +1,5 @@
-﻿(function(window, angular) {
+(function(window, angular) {
+	"use strict";
 
 	var app = angular.module("app", ["ngRoute"]);
 

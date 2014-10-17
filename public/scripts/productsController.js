@@ -1,16 +1,24 @@
-﻿app.controller("productsController", function($scope, $location, productService, shoppingCart) {
+(function(angular) {
+	"use strict";
 
-	productService.getProducts().then(function(response) {
-		$scope.products = response.data;
+	angular.module("app").controller("productsController", function($scope, $location, productService, shoppingCart) {
 
-		$scope.visibleDetails = {};
+		productService.getProducts().then(function(response) {
+			$scope.products = response.data;
+		});
+
+		var visibleDetails = {};
 
 		$scope.showDetails = function(id) {
-			$scope.visibleDetails[id] = true;
+			visibleDetails[id] = true;
 		};
 
 		$scope.hideDetails = function(id) {
-			$scope.visibleDetails[id] = false;
+			visibleDetails[id] = false;
+		};
+
+		$scope.isVisible = function(id) {
+			return !!visibleDetails[id];
 		};
 
 		$scope.addToCart = function(product) {
@@ -18,4 +26,5 @@
 			$location.path("cart");
 		};
 	});
-});
+
+}(window.angular));
