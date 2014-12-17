@@ -9,14 +9,35 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
 	</head>
 
-	<body>
+	<body ng-app="app">
 		<div class="page">
 			<header>
 				<h1><a href="/">Angular Store</a></h1>
 				<div class="menu">
 				</div>
 			</header>
-			<div class="content"></div>
+			<div class="content" ng-controller="productController">
+               <table class="products">
+                   <tr ng-repeat="product in products">
+                       <td><h2>{{product.title}}</h2></td>
+                       <td>
+                           {{ product.price | currency:"PLN" }}
+                           <quantity-bar value="{{product.quantity}}" max-value="1000"></quantity-bar>
+                       </td>
+                   </tr>
+               </table>
+			</div>
 		</div>
+       
+       
+        <script src="scripts/libs/jquery.js"></script>
+		<script src="scripts/libs/angular.js"></script>
+		<script src="https://code.angularjs.org/1.2.28/i18n/angular-locale_pl-pl.js"></script>
+		<script src="scripts/libs/angular-route.js"></script>
+		
+		<script src="scripts/app/appModule.js"></script>
+		<script src="scripts/app/productsService.js"></script>
+		<script src="scripts/app/productsController.js"></script>
+		<script src="scripts/app/quantityBarDirective.js"></script>
 	</body>
 </html>
